@@ -6,6 +6,6 @@ Se encuentran 2 carpetas
 - defunciones 1994-2021: considera dentro el diccionario con las variables de los datos
 
 - datos egresos hospitalarios: considera dentro el diccionario con las variables de los datos
-- Muestras: Contiene las muestras de los datos a utilizar en formato csv, cada uno contiene 10 datos de cada uno de los datasets
+- Muestras: Contiene las muestras de los datos a utilizar en formato csv, cada uno contiene 20 datos de cada uno de los datasets
 
 Además, del archivo pdf con la propuesta del proyecto
