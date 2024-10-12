@@ -1,7 +1,7 @@
 # ATDC--imt2200
 Proyecto del curso imt2200 año 2024. 
 
-Se encuentran 2 carpetas 
+Se encuentran 3 carpetas 
 
 - defunciones 1990-2021: considera dentro el diccionario con las variables de los datos
 
