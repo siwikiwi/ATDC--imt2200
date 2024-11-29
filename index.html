@@ -13,13 +13,74 @@
         }
         img {
             display: block; 
-            margin: 20px auto; 
-            max-width: 100%;
+            margin: 10px auto;
+            max-width: 200px; 
             height: auto; 
-            border: 2px solid #333;
+            border: 2px solid #333; 
+            cursor: pointer; 
         }
         h1, h2 {
             color: #003366;
+        }
+        .imagenes {
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 0px; 
+            justify-items: center; 
+        }
+        .imagenes a img {
+            width: 100%; 
+            max-width: 350px; 
+            height: 200px; 
+            border: 2px solid #333; 
+        }
+        .imagenes2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 0px;
+            justify-items: center;
+        }
+        .imagenes2 a img {
+            width: 90%; 
+            max-width: 900px; 
+            height: 350px; 
+            border: 2px solid #333; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .imagenes3 {
+            display: grid; 
+            grid-template-columns: repeat(1, 1fr); 
+            gap: 0px; 
+            justify-items: center;
+            text-align: center;
+        }
+
+        .imagenes3 a img {
+            width: 90%; 
+            height: auto; 
+            max-width: 700px; 
+            border: 2px solid #333; 
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .imagenes4 {
+            display: grid; 
+            grid-template-columns: repeat(1, 1fr); 
+            gap: 0px; 
+            justify-items: center;
+            text-align: center;
+        }
+
+        .imagenes4 a img {
+            width: 90%; 
+            height: 400px; 
+            max-width: 1100px; 
+            border: 2px solid #333; 
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
         }
         .descripcion, .fuentes, .razonamiento, .evaluacion {
             margin-top: 30px;
@@ -32,23 +93,17 @@
         footer {
             background-color: #000509; 
             color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-size: 14px;
+            text-align: center; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%; 
+            font-size: 14px; 
         }
     </style>
 </head>
 <body>
 
     <h1>Defunciones y Egresos en Chile</h1>
-    
-    <div class="descripcion">
-        <p>Hola, esta es una breve introducción sobre los datos de defunciones y egresos hospitalarios en Chile.</p>
-        <img src="hola.jpeg" alt="Imagen de Hola" width="300">
-    </div>
     
     <div class="Introducción">
         <h2>Introducción</h2>
@@ -61,20 +116,222 @@
         <p>
             A través de este análisis, buscaremos responder algunas preguntas clave que nos permitirán entender mejor los patrones en la mortalidad y hospitalización en Chile, tales como:
         </p>
-        <ul>
-            <li><b>1)</b> ¿Cuál es la causa externa más común dentro de los datos analizados? Se considera causa externa aquellas no relacionadas con enfermedades.</li>
-            <li><b>2)</b> ¿Existe una tendencia en las causas de muerte en diferentes grupos de edad? ¿Cómo afectan las disparidades de género en las tasas de mortalidad?</li>
-            <li><b>3)</b> ¿Qué tan efectivas son las hospitalizaciones en la reducción de la mortalidad por enfermedades?</li>
-            <li><b>4)</b> ¿Existen factores que explican las variaciones en las tasas de mortalidad y hospitalizaciones? Estos factores pueden incluir aspectos demográficos, socioeconómicos y regionales.</li>
-            <li><b>5)</b> ¿Existen factores que explican las variaciones en las tasas de hospitalizaciones? Estos factores pueden incluir aspectos demográficos, socioeconómicos y regionales.</li>
-        </ul>
     </div>
     
     <div class="Preguntas">
-        <p>Más información detallada en los siguientes apartados.</p>
-        <img src="hola.jpeg" alt="Imagen de Hola" width="300">
+        <h3><b>1)</b> ¿Cuál es la causa externa  y interna más común dentro de los datos analizados? Se considera causa externa aquellas no relacionadas con enfermedades y internas relacionadas a enfermedades.</h3>
     </div>
-    
+    <div class="imagenes">
+        <a href="img/muertes_externasP1.png" target="_blank">
+            <img src="img/muertes_externasP1.png" alt="Gráfico 0-4 años">
+            <p> Top 10 de Enfermedades externas con mayor mortalidad</p>      
+        </a>
+        <a href="img/muertes_internasP1.png" target="_blank">
+            <img src="img/muertes_internasP1.png" alt="Gráfico 4-12 años">
+            <p>Top 10 de Enfermedades internas con mayor mortalidad</p>
+        </a>
+    </div>
+    <div>
+        <p><strong>-Entonces observando el grafico uno se da cuanta de que la causa interna (enfermedades) más común en las defunciones son infartos agudos del miocardio.
+            <br>-Observando este grafico podemos ver que la causa externa de muerte más común es el suicidio por lesiones autoinfligidas por ahorcamiento, seguido por 2 clases distintas de accidentes de trafico.</strong>
+        </p>
+    </div>
+    <div class="Preguntas">
+        <h3><b>2)</b> A partir del grupo etario con mayor egresos hospitalarios, ¿Existen enfermedades típicas para estos, y cuántos días permanecen en el hospital?</h3>
+        <p>A partir de los 60 años, las personas tienen más probabilidades de caer hospitalizadas, o de morir por enfermedades. Tomamos las edades a partir de los 60 años junto con las enfermedades más comunas. Investigando, cuántos días de estadía están por estas enfermedades.</p>
+    </div>
+    <div class="imagenes4">
+        <a href="img/condicion_egreso.png" target="_blank">
+            <img src="img/condicion_egreso.png" alt="Gráfico 0-4 años">
+            <p> condicion_egreso</p>      
+        </a>
+    </div>
+    <div>        
+        <p><br>Conclusion: 
+        <br>Las enfermedades correspondientes a los códigos de diagnóstico CIE-10 (Clasificación Internacional de Enfermedades, 10ª edición) para la lista que proporcionas son:
+        
+        <br>S069 - Lesión intracraneal no especificada.
+        <br>S828 - Fractura de la pierna, no especificada.
+        <br>S720 - Fractura del fémur.
+        <br>S626 - Lesión de los tendones y músculos de la mano.
+        <br>T509 - Intoxicación aguda por alcohol.
+        <br>S628 - Lesión de los tendones y músculos de la muñeca.
+        <br>T814 - Coma no traumático, no especificado.
+        <br>T009 - Lesión no especificada de la cabeza.
+        <br>S525 - Fractura de la clavícula.
+        <br>S832 - Fractura de la rótula.</p></div>
+    <div class="Preguntas">
+        <h3><b>3)</b>¿Existe una tendencia en las causas de muerte en diferentes grupos de edad? ¿Cómo afectan las disparidades de género en las tasas de mortalidad?</h3>
+    </div>
+    <div>
+        <p>los graficos presentes podemos concluir que para las causas externas podemos decir que existen distintas causas más comunes para distintos grupos etarios.
+            <br>Pero se ve como siempre esta presente las defunciones por accidentes de trafico, aunque para el caso de la gente mayor a 80 años se ve como hay una causa poco vista siendo por caida. 
+            <br>También se ve que en las edades entre 19 y 80 se ve la lesión autoinfligida por estrangulamiento, ahí se puede ver una tendencia por edad.
+
+            <br>En el caso de las causas internas se ve claramente que en las edades más avanzadas ocurren más infartos de miocardio, mientras que en gente más joven, como adolescentes se ve más el asfixia por sumersión y por el consumo de otras sustancias.
+            <br>    Mientras que para personas aún más jovenes pasan lesiones craneales, cosa por lo que son conocidos los bebes.</p>
+        <p><strong>Diagnostico interno: </strong></p>
+    </div>
+    <div class="imagenes">
+        <a href="img/diag1_0a4.png" target="_blank">
+            <img src="img/diag1_0a4.png" alt="Gráfico 0-4 años">
+            <p> Diag 1 (0-4 años)</p>
+        </a>
+        <a href="img/diag1_4a12.png" target="_blank">
+            <img src="img/diag1_4a12.png" alt="Gráfico 4-12 años">
+            <p>Diag 1 (4-12 años)</p>
+        </a>
+        <a href="img/diag1_12a19.png" target="_blank">
+            <img src="img/diag1_12a19.png" alt="Gráfico 12-19 años">
+            <p>Diag 1 (12-19 años)</p>
+        </a>
+        <a href="img/diag1_19a40.png" target="_blank">
+            <img src="img/diag1_19a40.png" alt="Gráfico 19-40 años">
+            <p>Diag 1 (19-40 años)</p>
+        </a>
+        <a href="img/diag1_40a60.png" target="_blank">
+            <img src="img/diag1_40a60.png" alt="Gráfico 40-60 años">
+            <p>Diag 1 (40-60 años )</p>
+        </a>
+        <a href="img/diag1_60a80.png" target="_blank">
+            <img src="img/diag1_60a80.png" alt="Gráfico 60-80 años">
+            <p>Diag 1 (60-80 años)</p>
+        </a>
+        <a href="img/diag1_80plus.png" target="_blank">
+            <img src="img/diag1_80plus.png" alt="Gráfico 80+ años">
+            <p>Diag 1 (80+ años)</p>
+        </a>
+    </div>
+    <div>
+        <p><strong>Diagnostico externo:</strong><br></p>
+    </div>
+
+    <div class="imagenes">
+        <a href="img/diag2_0a4.png" target="_blank">
+            <img src="img/diag2_0a4.png" alt="Gráfico 0-4 años">
+            <p> Diag 2 (0-4 años)</p>
+        </a>
+        <a href="img/diag2_4a12.png" target="_blank">
+            <img src="img/diag2_4a12.png" alt="Gráfico 4-12 años">
+            <p>Diag 2 (4-12 años)</p>
+        </a>
+        <a href="img/diag2_12a19.png" target="_blank">
+            <img src="img/diag2_12a19.png" alt="Gráfico 12-19 años">
+            <p>Diag 2 (12-19 años)</p>
+        </a>
+        <a href="img/diag2_19a40.png" target="_blank">
+            <img src="img/diag2_19a40.png" alt="Gráfico 19-40 años">
+            <p>Diag 2 (19-40 años)</p>
+        </a>
+        <a href="img/diag2_40a60.png" target="_blank">
+            <img src="img/diag2_40a60.png" alt="Gráfico 40-60 años">
+            <p>Diag 2 (40-60 años )</p>
+        </a>
+        <a href="img/diag1_60a80.png" target="_blank">
+            <img src="img/diag1_60a80.png" alt="Gráfico 60-80 años">
+            <p>Diag 1 (60-80 años)</p>
+        </a>
+        <a href="img/diag2_80plus.png" target="_blank">
+            <img src="img/diag2_80plus.png" alt="Gráfico 80+ años">
+            <p>Diag 2 (80+ años)</p>
+        </a>
+    </div>
+    <div class="Preguntas">
+        <h3><b>4)</b>¿Cuáles son las causas más comunes de ingreso hospitalario (causa interna) y cuál es la distribución de los pacientes vivos y fallecidos para cada una?</h3>
+        <p><br><strong> mas comunes de ingreso:</strong>
+
+            <br>Traumatismo intracraneal, no especificado es la causa más común con 170577 casos (96.74% de efectividad).
+            Otras causas frecuentes incluyen fracturas (columna, fémur, etc.) y lesiones en el hombro.
+            
+            <br>Tasas de efectividad:
+            
+            <br>La fractura de columna vertebral tiene una alta efectividad (99.95%), con solo 61 muertes.
+            Las lesiones de hombro tienen una efectividad casi perfecta (99.98%).
+            
+            <br>Condiciones con más muertes:
+            
+            <br>Traumatismo intracraneal tiene la mayor cantidad de muertes (5,740), pero con una baja tasa de mortalidad.
+            Complicaciones quirúrgicas tienen 670 muertes, con una efectividad del 98.73%.
+            La mayoría de los ingresos hospitalarios son por traumatismos y fracturas, con tasas de mortalidad muy bajas. Las complicaciones quirúrgicas son menos comunes pero tienen una mayor mortalidad.</p>
+    </div>
+    <div class="imagenes4">
+        <a href="img/Numero de muertes por razon de ingreso.png" target="_blank">
+            <img src="img/Numero de muertes por razon de ingreso.png" alt="Gráfico 0-4 años">
+            <p> Numero de muertes por razon de ingreso</p>      
+        </a>
+    </div>
+    <div class="Preguntas">
+        <h3><b>5)</b> ¿Existen factores que explican las variaciones en las tasas de mortalidad y hospitalizaciones? Considerando un análisis por región (demográfico, socioeconómico, otros).</h3>
+    </div>
+    <div class="imagenes2">
+        <p><strong>Genero:</strong>
+            <br>A partir de los datos proporcionados sobre la proporción de mortalidad por género, podemos observar lo siguiente:
+
+            <br>- Hombres: La tasa de mortalidad es del 2.72% y  supervivencia es del 97.28%.
+            <br>- Mujeres: La tasa de mortalidad es del 1.53% y la supervivencia es del 98.47%.
+            <br>- Conclusión:
+            <br>La mortalidad es más alta en hombres (2.72%) en comparación con las mujeres (1.53%).
+            <br>Esto sugiere que los hombres tienen una mayor probabilidad de fallecer bajo las condiciones estudiadas, 
+            <br>lo cual podría estar relacionado con factores biológicos, sociales o el tipo de enfermedades o causas que afectan a cada género.</p>
+        <a href="img/mortalidad por genero.png" target="_blank">
+            <img src="img/mortalidad por genero.png" alt="Gráfico 0-4 años">
+            <p> Mortalidad por edad</p>      
+        </a>
+        <p><strong>Edad:</strong>
+            <br>La mortalidad es muy baja en niños de 1 a 9 años (0.18%-0.21%) y aumenta en menores de un año (1.10%). 
+            <br>En adultos jóvenes y de mediana edad, la mortalidad empieza a subir en el grupo de 30 a 39 años (0.35%) y continúa aumentando en los grupos de 40 a 59 años (hasta 2.05%).
+            <br>A partir de los 60 años, el aumento de la mortalidad es marcado: 3.55% en 60-69 años, 5.85% en 70-79 años, 9.80% en 80-89 años y 14.98% en mayores de 90 años. Conclusiones: La mortalidad aumenta con la edad, especialmente a partir de los 60 años, siendo más notable en adultos mayores. 
+            <br>Los menores de un año también presentan mayor vulnerabilidad. Las políticas de salud pública deben priorizar a los mayores de 60 años y a los menores de un año.</p>
+        <a href="img/mortalidad por edad.png" target="_blank">
+            <img src="img/mortalidad por edad.png" alt="Gráfico 4-12 años">
+            <p>Mortalidad por genero</p>
+        </a>
+        <p><strong> Edad y genero:</strong>
+            <br><strong>1)</strong>Proporciones por género y grupo de edad: La tabla muestra la mortalidad y sobrevivencia por género y edad.
+
+            <br><strong>2)</strong>Tendencias generales:
+            
+            Jóvenes (0-19 años): Mortalidad baja, con más del 99% de sobrevivencia. Los hombres tienen ligeramente más mortalidad.
+            Adultos jóvenes (20-39 años): Mortalidad aumenta, especialmente en hombres, superando el 0.6% en el grupo de 20-29 años.
+            Adultos de mediana edad (40-59 años): Mortalidad supera el 1% en hombres, especialmente en mayores de 50 años.
+            Adultos mayores (60 años en adelante): Mortalidad aumenta significativamente, con mayores tasas en hombres (hasta 6.4% en 70-79 años).
+            Menores de un año: Mortalidad cercana al 1%, similar en ambos géneros.
+            <br><strong>3)</strong>Análisis de género: Los hombres tienen mayor mortalidad, especialmente en los grupos mayores, por factores biológicos y sociales.
+            
+            <br><strong>4)</strong>Tendencias según la edad: La mortalidad aumenta con la edad, siendo baja en jóvenes y alta a partir de los 60 años.
+            
+            <br><strong>5)</strong>Posibles factores a explorar:
+            
+            Condiciones de salud: Enfermedades crónicas afectan a adultos mayores.
+            Estilos de vida: El consumo de tabaco y alcohol contribuye a la mortalidad, especialmente en hombres.
+            Acceso a atención médica: La desigualdad en el acceso a la salud influye en las tasas de mortalidad.</p>
+        <a href="img/mortalidad por edad y genero.png.png" target="_blank">
+            <img src="img/mortalidad por edad y genero.png" alt="Gráfico 4-12 años">
+            <p>Mortalidad por edad y genero</p>
+        </a>
+        <p><strong>Region:</strong>
+            <br><strong>1)</strong>Proporción de Mortalidad: Las tasas varían entre 1.3% y 2.6%. Las regiones con menor mortalidad son la región 02 (1.30%) y la región 10 (1.78%), mientras que las más altas son la región 16 (2.58%) y la región 05 (2.35%).
+
+            <br><strong>2)</strong> Proporción de Supervivencia: La supervivencia es alta, entre 97.4% y 98.7%. Las regiones con mayor supervivencia son la región 10 (98.22%) y la región 11 (98.50%). Las menores tasas se encuentran en la región 16 (97.42%) y la región 05 (97.65%).
+            
+            <br><strong>3)</strong> Análisis comparativo: Las regiones con mayor mortalidad (como la región 16) muestran una ligera disminución en la supervivencia, pero en general, las tasas de supervivencia son superiores a las de mortalidad, con diferencias moderadas entre regiones.
+            
+            <br><strong>4)</strong> Factores a considerar:
+            
+            <br>   Condiciones de salud regionales: Las diferencias pueden estar relacionadas con el acceso a servicios de salud.
+            <br>   socioeconómicos y ambientales: El nivel socioeconómico, la educación y las condiciones de vivienda pueden influir.
+            <br>   Estilos de vida: Diferencias en hábitos como alimentación, ejercicio, y consumo de tabaco o alcohol podrían afectar las tasas de mortalidad.</p>
+        <a href="img/mortalidad por region.png.png" target="_blank">
+            <img src="img/mortalidad por region.png" alt="Gráfico 4-12 años">
+            <p>Mortalidad por region</p>
+        </a>
+    </div>
+    <div class="imagenes3">
+        <a href="img/Gracias.png" target="_blank">
+            <img src="img/chill.jpeg" alt="Descripción de la imagen">
+            <p>Gracias por ver</p>
+        </a>
+    </div>
     <footer>
         <p></p>
     </footer>
