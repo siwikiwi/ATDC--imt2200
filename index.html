@@ -82,6 +82,23 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .imagenes5 {
+            display: grid; 
+            grid-template-columns: repeat(1, 1fr); 
+            gap: 0px; 
+            justify-items: center;
+            text-align: center;
+        }
+
+        .imagenes5 a img {
+            width: 90%; 
+            height: 500px; 
+            max-width: 1100px; 
+            border: 2px solid #333; 
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+        }
         .descripcion, .fuentes, .razonamiento, .evaluacion {
             margin-top: 30px;
             font-size: 16px;
@@ -119,7 +136,7 @@
     </div>
     
     <div class="Preguntas">
-        <h3><b>1)</b> ¿Cuál es la causa externa  y interna más común dentro de los datos analizados? Se considera causa externa aquellas no relacionadas con enfermedades y internas relacionadas a enfermedades.</h3>
+        <h3><b>1)</b> ¿Cuál es la causa externa e interna más común dentro de los datos analizados? Se considera causa externa aquellas que no están relacionadas con enfermedades e interna a aquellas que están relacionadas con enfermedades.</h3>
     </div>
     <div class="imagenes">
         <a href="img/muertes_externasP1.png" target="_blank">
@@ -132,8 +149,8 @@
         </a>
     </div>
     <div>
-        <p><strong>-Entonces observando el grafico uno se da cuanta de que la causa interna (enfermedades) más común en las defunciones son infartos agudos del miocardio.
-            <br>-Observando este grafico podemos ver que la causa externa de muerte más común es el suicidio por lesiones autoinfligidas por ahorcamiento, seguido por 2 clases distintas de accidentes de trafico.</strong>
+        <p><strong>- Al observar el gráfico, uno se da cuenta de que la causa interna (enfermedades) más común en las defunciones son los infartos agudos de miocardio.
+            <br>- Al observar este gráfico, podemos ver que la causa externa de muerte más común es el suicidio por lesiones autoinfligidas por ahorcamiento, seguido por dos tipos distintos de accidentes de tráfico.</strong>
         </p>
     </div>
     <div class="Preguntas">
@@ -146,9 +163,9 @@
             <p> condicion_egreso</p>      
         </a>
     </div>
-    <div>        
-        <p><br>Conclusion: 
-        <br>Las enfermedades correspondientes a los códigos de diagnóstico CIE-10 (Clasificación Internacional de Enfermedades, 10ª edición) para la lista que proporcionas son:
+    <div>
+        <p><br><strong>Conclusión:</strong>
+        <br>Las enfermedades correspondientes a los códigos de diagnóstico CIE-10 (Clasificación Internacional de Enfermedades, 10ª edición) para la lista proporcionada son:
         
         <br>S069 - Lesión intracraneal no especificada.
         <br>S828 - Fractura de la pierna, no especificada.
@@ -159,18 +176,18 @@
         <br>T814 - Coma no traumático, no especificado.
         <br>T009 - Lesión no especificada de la cabeza.
         <br>S525 - Fractura de la clavícula.
-        <br>S832 - Fractura de la rótula.</p></div>
+        <br>S832 - Fractura de la rótula.</p>
+    </div>
     <div class="Preguntas">
-        <h3><b>3)</b>¿Existe una tendencia en las causas de muerte en diferentes grupos de edad? ¿Cómo afectan las disparidades de género en las tasas de mortalidad?</h3>
+        <h3><b>3)</b> ¿Existe una tendencia en las causas de muerte en diferentes grupos de edad? ¿Cómo afectan las disparidades de género en las tasas de mortalidad?</h3>
     </div>
     <div>
-        <p>los graficos presentes podemos concluir que para las causas externas podemos decir que existen distintas causas más comunes para distintos grupos etarios.
-            <br>Pero se ve como siempre esta presente las defunciones por accidentes de trafico, aunque para el caso de la gente mayor a 80 años se ve como hay una causa poco vista siendo por caida. 
-            <br>También se ve que en las edades entre 19 y 80 se ve la lesión autoinfligida por estrangulamiento, ahí se puede ver una tendencia por edad.
-
-            <br>En el caso de las causas internas se ve claramente que en las edades más avanzadas ocurren más infartos de miocardio, mientras que en gente más joven, como adolescentes se ve más el asfixia por sumersión y por el consumo de otras sustancias.
-            <br>    Mientras que para personas aún más jovenes pasan lesiones craneales, cosa por lo que son conocidos los bebes.</p>
-        <p><strong>Diagnostico interno: </strong></p>
+        <p>En los gráficos presentados, podemos concluir que, en cuanto a las causas externas, existen diversas causas más comunes para distintos grupos etarios.
+            <br>Sin embargo, se observa que las defunciones por accidentes de tráfico siempre están presentes, aunque en el caso de las personas mayores de 80 años, aparece una causa menos común: las caídas.
+            <br>También se observa que en los grupos de edades entre 19 y 80 años, la lesión autoinfligida por estrangulamiento es más frecuente, lo que revela una tendencia relacionada con la edad.
+            <br>En cuanto a las causas internas, se observa claramente que, en edades más avanzadas, ocurren más infartos de miocardio, mientras que en personas más jóvenes, especialmente adolescentes, se da más el caso de asfixia por sumersión y el consumo de otras sustancias.
+            <br>Por otro lado, en personas aún más jóvenes, como los bebés, las lesiones craneales son comunes, lo que es característico en esta etapa de la vida.</p>
+        <p><strong>Diagnóstico interno:</strong></p>
     </div>
     <div class="imagenes">
         <a href="img/diag1_0a4.png" target="_blank">
@@ -324,11 +341,15 @@
             <p>Mortalidad por region</p>
         </a>
     </div>
-    <div><p><strong>Dato curioso:</strong><br>usando un regresion lineal pudimos predecir que en enero de 2050 moriran 16064<br><br></p></div>
-    <div class="imagenes4"></div>
+    <div><p><strong>Dato curioso:</strong><br>Mediante el uso de regresión lineal, una técnica estadística que nos permite modelar la relación entre variables, pudimos realizar una predicción sobre la cantidad de muertes para el mes de enero de 2050. Al analizar los datos históricos disponibles y ajustando una línea de mejor ajuste a esos datos, el modelo estimó que en ese mes morirán aproximadamente 16,064 personas.
+
+        Esta predicción se basa en tendencias pasadas y asume que las condiciones y factores que han influido en las muertes en años anteriores seguirán siendo similares en el futuro cercano. Cabe destacar que esta estimación puede verse afectada por muchos factores imprevisibles, como cambios en las políticas de salud, avances médicos, variaciones en los comportamientos sociales y factores ambientales que podrían alterar la tasa de mortalidad.<br><br></p></div>
+    <div class="imagenes5">
     <a href="img/regresion_lineal.png" target="_blank">
         <img src="img/regresion_lineal.png" alt="Gráfico 0-4 años">
-        <p> Regresion Lineal</p>      
+        <p> Regresion Lineal</p>   
+    </a>
+    </div>
     <div class="imagenes3">
         <p><p><br><br><br><strong> más información, visita el repositorio: <a href="https://github.com/siwikiwi/ATDC--imt2200" target="_blank">este sitio web</a>.</strong><br><br><br></p></p>
         <a href="img/Gracias.png" target="_blank">
